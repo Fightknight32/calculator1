@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: monospace;
+  height:100vh;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  outline: 5px solid grey;
+  cursor: default;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.input {
+  height: 100px;
+  width: 300px;
+  outline: 1px solid blue;
+  font-size: 2rem;
+  padding: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.buttons > * {
+  outline: black solid 1px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.span-2 {
+  grid-column: auto / span 2;
+}
